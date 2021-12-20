@@ -22,7 +22,7 @@ services:
       - php
     volumes:
       - '.:/var/www/html/example-app'
-      - './conf.d/nginx:/etc/nginx/conf.d'
+      - './nginx/conf.d:/etc/nginx/conf.d'
     networks:
       - main-lemp
   db:
